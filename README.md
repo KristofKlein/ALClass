@@ -91,3 +91,11 @@ Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy UnRestricted
 
 **HINT**:
 You should review your current settings and adjust them to a minimum risk setup ((at least as long as you are not sure about)
+
+## NAV/BC-Containerhelper
+
+The scripts should take care of your current installation. This might lead to issues if you already tried out once nav-Containerhelper. In that case the system will try to remove the old instance and install the new bc-Containerhelper instead. This might not always work! If you have issues let me know and we sort it out!
+
+## Container
+
+As for any other service process we need to be able to control the user. For our docker Business Central the same applies. So how to connect to the instance? Currently this is setup to use your windows authentication. **Thereby you need to be connected to the VPN**!
