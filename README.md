@@ -38,10 +38,11 @@ For me it looks like this:
 |CurrentUser|RemoteSigned|
 |LocalMachine|Undefined|
 
-You can change any of those if you want:
+
+You can change any of those if you want with:
 
 ```powershell
-Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy UnRestricted
+Set-Executionpolicy
 ```
 
 The expected execution policy values are as follows:
@@ -74,11 +75,17 @@ Get-ExecutionPolicy -List | Format-Table -AutoSize
 |CurrentUser|RemoteSigned|
 |LocalMachine|Unrestricted|
 
+## What you should do now
+
+To get you going on the next sessions with powershell task I recommend you to set it like the following:
+
+```powershell
+Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy UnRestricted
+```
+
 ### If you want to know more read here
 
 <https://docs.microsoft.com/en-gb/powershell/module/Microsoft.PowerShell.Security/Set-ExecutionPolicy?view=powershell-5.1>
-
-or
 
 <https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/>
 
