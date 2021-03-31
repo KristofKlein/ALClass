@@ -11,7 +11,7 @@ These commands will take care that you have the latest version of BC-ContainerHe
 Have fun and good luck!
 
 **ATTENTION**:
-As you are using Powershell maybe for the first time you will be prompted - in lucky cases - with some dialogs about confirming access e.g. for Nuget or Powershell Gallery. Of course you should grant access to that.
+As you are using Powershell maybe for the first time you will be prompted - in lucky cases - with some dialogs about confirming access e.g. for NuGet or Powershell Gallery. Of course you should grant access to that.
 
 In some cases you will see some red text, saying something about Execution policies:
 
@@ -19,7 +19,7 @@ In some cases you will see some red text, saying something about Execution polic
 
 Some people had policy issues and also some concerns on what the commands was that they used...
 to wrap this is I wrote a small summary:
- 
+
 Powershell has a quite strong restriction model to block scripts from executing. This can be handled in several ways and on several scopes:
 
 By running the following you get your current setup.
@@ -37,7 +37,6 @@ For me it looks like this:
 |Process|Undefined|
 |CurrentUser|RemoteSigned|
 |LocalMachine|Undefined|
-
 
 You can change any of those if you want with:
 
