@@ -66,7 +66,7 @@ page 50100 CarList
                     CarMgmt: Codeunit CarMgmt;
                     CarsInTableLbl: Label 'You have %1 Cars in the list.', Comment = '%1 gets replaced with Car.Count', Locked = false;
                 begin
-                    Message(CarsInTableLbl, CarMgmt.Count());
+                    Message(CarsInTableLbl, CarMgmt.Counter());
                 end;
             }
         }
