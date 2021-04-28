@@ -1,0 +1,4 @@
+{
+    "al.enableCodeActions": true,
+    "al.codeAnalyzers": ["${CodeCop}", "${UICop}"]
+}
