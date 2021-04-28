@@ -5,9 +5,12 @@ codeunit 50100 CarMgmt
 
     end;
 
-    procedure Count()
+    procedure Count(): integer;
+    var
+        CarRec: Record Car;
     begin
-        Error('Procedure Count not implemented.');
+        CarRec.Reset();
+        Exit(CarRec.Count());
     end;
 
 }

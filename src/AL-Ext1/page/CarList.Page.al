@@ -58,17 +58,18 @@ page 50100 CarList
             action("Count")
             {
                 ApplicationArea = All;
+                ToolTip = 'This action will count the amount of Records in the Car table.';
+                Image = NumberGroup;
 
                 trigger OnAction()
                 var
                     CarMgmt: Codeunit CarMgmt;
+                    CarsInTableLbl: Label 'You have %1 Cars in the list.', Comment = '%1 gets replaced with Car.Count', Locked = false;
                 begin
-                    CarMgmt.Count();
+                    Message(CarsInTableLbl, CarMgmt.Count());
                 end;
             }
         }
     }
 
-    var
-        myInt: Integer;
 }
