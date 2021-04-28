@@ -1,7 +1,8 @@
 table 50100 Car
 {
     DataClassification = ToBeClassified;
-
+    DrillDownPageId = CarList;
+    LookupPageId = CarList;
     fields
     {
         field(1; CarID; Integer)
