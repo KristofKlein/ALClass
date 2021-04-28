@@ -1,0 +1,27 @@
+{
+  "id": "96537b19-0629-41cf-a27e-fdc384bac260",
+  "name": "ALClass",
+  "publisher": "Kristof Klein",
+  "version": "0.0.0.1",
+  "brief": "This is some example code for the AL Class 2021",
+  "description": "Core concepts around the manifest, launch json and ordinary AL Objects. Nothing too fancy",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./images/download.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALClass.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0",
+  "target": "OnPrem"
+}
