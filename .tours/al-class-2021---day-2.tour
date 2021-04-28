@@ -1,0 +1,62 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "AL Class 2021 - Day 2",
+  "steps": [
+    {
+      "file": "README.md",
+      "description": "So here you will find all the latest changes. The readme.md file is quite valuable as it is shown in all repository clients. Like that you can fast spread info on first sight. ",
+      "line": 1
+    },
+    {
+      "file": "README.md",
+      "description": "in Session Two we started talking about first steps with AL. what it is and how to get into it. This Codebase is sharing one of the exercises examples.",
+      "line": 102
+    },
+    {
+      "file": "src/AL-Ext1/codeunit/CarMgmt.Codeunit.al",
+      "description": "This started the thing. By adding an .al file VS Code took us into the AL Extension that called out for an app.json File. The manifest.",
+      "line": 1
+    },
+    {
+      "file": "app.json",
+      "description": "Well, and this is it. The manifest. It describes your solution. Who you are, what it is about, which Versions it might run on. just hover over the value with your mouse and you will see more details.",
+      "line": 1
+    },
+    {
+      "file": "app.json",
+      "description": "This parameter we added (remember Ctrl+Space for Intelisense!). This tells your compiler that it should allow us to use features that only OnPrem can do - like using dotnet.",
+      "line": 26
+    },
+    {
+      "file": "src/AL-Ext1/table/Car.Table.al",
+      "description": "So this is a table created with the snippet ttable",
+      "line": 1
+    },
+    {
+      "file": "src/AL-Ext1/table/Car.Table.al",
+      "description": "also fields are created with a snippet tfield (have in mind that there is also a tpagefield - don't mix them up)",
+      "line": 8
+    },
+    {
+      "file": ".vscode/settings.json",
+      "description": "Here we exteneded our VS Code - AL Extension - Setup such that it will also use codecops and code actions.",
+      "line": 1
+    },
+    {
+      "file": ".vscode/settings.json",
+      "description": "right now as we make use of OnPrem we only use two out of 4 cops - again - use Intellisense to see what else you can do.",
+      "line": 3
+    },
+    {
+      "file": ".vscode/launch.json",
+      "description": "lunch.json was created when you tried to build your solution (CTRL + SHIFT + B). It tells VS Code where the instance of Business Central is running that you want to connect to. so be careful that it matches your local setup (like container name, the way you authenticate)",
+      "line": 9
+    },
+    {
+      "file": ".gitignore",
+      "description": "This is a new file that you have not heard about yet. But we need it to keep our repository clean. You will hear about it in the next session.",
+      "line": 1
+    }
+  ],
+  "ref": "Day2-Example-App"
+}
