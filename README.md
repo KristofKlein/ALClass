@@ -98,3 +98,7 @@ The scripts should take care of your current installation. This might lead to is
 ## Container
 
 As for any other service process we need to be able to control the user. For our docker Business Central the same applies. So how to connect to the instance? Currently this is setup to use your windows authentication. **Thereby you need to be connected to the VPN**!
+
+## AL
+
+There is a basic AL Extensions implementation now in place. use it as an example or to remember what we talked about.
