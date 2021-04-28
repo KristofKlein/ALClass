@@ -1,7 +1,7 @@
 {
   "id": "96537b19-0629-41cf-a27e-fdc384bac260",
   "name": "ALClass",
-  "publisher": "Kristof Klein",
+  "publisher": "Unicorn Corp.",
   "version": "0.0.0.1",
   "brief": "This is some example code for the AL Class 2021",
   "description": "Core concepts around the manifest, launch json and ordinary AL Objects. Nothing too fancy",
