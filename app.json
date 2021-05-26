@@ -2,7 +2,7 @@
   "id": "9b9a98d1-1ca8-46f0-9361-d4208c4da922",
   "name": "ALClassExt",
   "publisher": "Unicorn Corp.",
-  "version": "0.0.0.1",
+  "version": "0.0.0.2",
   "brief": "This is some example Extension code for the AL Class 2021",
   "description": "Core concepts around the extension Objects",
   "privacyStatement": "",
@@ -23,8 +23,8 @@
   "application": "17.2.0.0",
   "idRanges": [
     {
-      "from": 50150,
-      "to": 50200
+      "from": 50100,
+      "to": 50149
     }
   ],
   "contextSensitiveHelpUrl": "https://ALClass.com/help/",

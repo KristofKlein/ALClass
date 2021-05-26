@@ -1,13 +1,13 @@
-tableextension 50200 CarDetails extends Car
+tableextension 50100 CarDetails extends Car
 {
     fields
     {
-        field(50200; Speed; Integer)
+        field(50100; Speed; Integer)
         {
             DataClassification = ToBeClassified;
             InitValue = 0;
         }
-        field(50201; Weight; Decimal)
+        field(50101; Weight; Decimal)
         {
             DataClassification = ToBeClassified;
         }

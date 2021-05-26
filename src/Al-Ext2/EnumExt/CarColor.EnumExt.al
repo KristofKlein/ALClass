@@ -1,6 +1,7 @@
-enumextension 50200 CarColor extends Color
+enumextension 50100 CarColor extends Color
 {
-    value(50200; royalblue)
+    value(50100;
+    royalblue)
     {
     }
 }

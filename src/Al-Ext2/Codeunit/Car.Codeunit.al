@@ -1,4 +1,4 @@
-codeunit 50200 Car
+codeunit 50101 Car
 {
     trigger OnRun()
     begin
@@ -10,7 +10,4 @@ codeunit 50200 Car
 
     var
         myCar: Record Car;
-
-
-
 }
