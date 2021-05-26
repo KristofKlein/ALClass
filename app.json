@@ -1,0 +1,28 @@
+{
+  "id": "9b9a98d1-1ca8-46f0-9361-d4208c4da922",
+  "name": "ALClassExt",
+  "publisher": "Unicorn Corp.",
+  "version": "0.0.0.1",
+  "brief": "This is some example Extension code for the AL Class 2021",
+  "description": "Core concepts around the extension Objects",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.2.0.0",
+  "idRanges": [
+    {
+      "from": 50150,
+      "to": 50200
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://ALClass.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0",
+  "target": "OnPrem"
+}
