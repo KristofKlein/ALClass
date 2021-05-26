@@ -11,6 +11,12 @@
   "url": "",
   "logo": "",
   "dependencies": [
+    {
+      "id": "96537b19-0629-41cf-a27e-fdc384bac260",
+      "name": "ALClass",
+      "publisher": "Unicorn Corp.",
+      "version": "0.0.0.1"
+    }
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
