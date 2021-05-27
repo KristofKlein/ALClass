@@ -62,5 +62,34 @@ codeunit 50101 CarMgmtExt
     begin
     end;
 
+    /// <summary>
+    /// Subscriber for a Table Event - use Snippet to create them https://www.kauffmann.nl/2018/03/24/table-trigger-events-in-dynamics-365-business-central/
+    /// </summary>
+    /// <param name="RunTrigger">if the Deletion was called with true or false</param>
+    /// <param name="Rec">the record to delete</param>
+    [EventSubscriber(ObjectType::Table, Database::Car, 'OnBeforeDeleteEvent', '', true, true)]
+    local procedure ConfirmDeleteCarEntry(var Rec: Record Car; RunTrigger: Boolean)
+    begin
+        IF NOT Rec.IsTemporary() then
+            IF NOT Confirm('Are you sure sure? %1', false, Rec.CarID) then
+                ERROR('');
+    end;
 
+    /// <summary>
+    /// subsciber to a global Event https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-event-types
+    /// </summary>
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::LogInManagement, 'OnAfterCompanyOpen', '', false, false)]
+    local procedure OnAfterCompanyOpen();
+    begin
+        Message('あなたは地獄のように元気に見えます');
+    end;
+
+    ///<summary>
+    /// subscriber to a Page Event
+    /// </summary>
+    [EventSubscriber(ObjectType::Page, Page::CarList, 'OnAfterActionEvent', 'Count', false, true)]
+    local procedure MyProcedure()
+    begin
+        Message('stop that button!');
+    end;
 }
