@@ -27,7 +27,9 @@ codeunit 50101 CarMgmtExt
         Cars: Record Car;
         SumSpeed: BigInteger;
         Counter: BigInteger;
+        Handled: Boolean;
     begin
+        OnBeforeCalcNeedForSpeed(Cars, Handled);
         Cars.SetLoadFields(Cars.Speed);
         IF Cars.FIndset() then begin
             repeat
@@ -37,4 +39,17 @@ codeunit 50101 CarMgmtExt
             exit(SumSpeed / Counter);
         end;
     end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeCalcNeedForSpeed(var Cars: Record Car; var Handled: Boolean)
+    begin
+    end;
+
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::CarMgmtExt, 'OnBeforeCalcNeedForSpeed', '', false, false)]
+    local procedure _OnBeforeCalcNeedForSpeed(var Cars: Record Car; var Handled: Boolean);
+    begin
+        Cars.SetFilter(Cars.Speed, '>%1', 0);
+    end;
+
 }
