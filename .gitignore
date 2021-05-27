@@ -1,3 +1,4 @@
 *.app
 .vscode/rad.json
 .vscode/launch.json
+.snapshots/*
