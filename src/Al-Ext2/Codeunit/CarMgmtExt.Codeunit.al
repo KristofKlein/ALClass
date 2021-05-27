@@ -36,6 +36,7 @@ codeunit 50101 CarMgmtExt
                 SumSpeed += Cars.Speed;
                 Counter += 1;
             until Cars.Next() = 0;
+            OnAfterCalcNeedForSpeed(Cars);
             exit(SumSpeed / Counter);
         end;
     end;
@@ -45,11 +46,21 @@ codeunit 50101 CarMgmtExt
     begin
     end;
 
+    [IntegrationEvent(false, false)]
+    local procedure OnAfterCalcNeedForSpeed(Cars: Record Car)
+    begin
+    end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::CarMgmtExt, 'OnBeforeCalcNeedForSpeed', '', false, false)]
     local procedure _OnBeforeCalcNeedForSpeed(var Cars: Record Car; var Handled: Boolean);
     begin
         Cars.SetFilter(Cars.Speed, '>%1', 0);
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::CarMgmtExt, 'OnAfterCalcNeedForSpeed', '', false, false)]
+    local procedure _OnAfterCalcNeedForSpeed(Cars: Record Car);
+    begin
+    end;
+
 
 }
