@@ -31,7 +31,7 @@ codeunit 50101 CarMgmtExt
         Cars.SetLoadFields(Cars.Speed);
         IF Cars.FIndset() then begin
             repeat
-                SumSpeed := Cars.Speed;
+                SumSpeed += Cars.Speed;
                 Counter += 1;
             until Cars.Next() = 0;
             exit(SumSpeed / Counter);
