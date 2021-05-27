@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Extension https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-page-ext-object
+/// </summary>
 pageextension 50100 CarListExt extends CarList
 {
     layout
