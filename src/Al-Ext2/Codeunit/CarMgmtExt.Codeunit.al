@@ -83,13 +83,4 @@ codeunit 50101 CarMgmtExt
     begin
         Message('あなたは地獄のように元気に見えます');
     end;
-
-    ///<summary>
-    /// subscriber to a Page Event
-    /// </summary>
-    [EventSubscriber(ObjectType::Page, Page::CarList, 'OnAfterActionEvent', 'Count', false, true)]
-    local procedure MyProcedure()
-    begin
-        Message('stop that button!');
-    end;
 }
