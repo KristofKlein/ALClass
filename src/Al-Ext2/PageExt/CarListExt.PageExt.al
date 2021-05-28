@@ -39,4 +39,19 @@ pageextension 50100 CarListExt extends CarList
             }
         }
     }
+
+    /// <summary>
+    /// Demonstrate the Usage of Manual Sbuscriber
+    /// </summary>
+    trigger OnAfterGetCurrRecord()
+    var
+        CarMgmtManualSup: Codeunit CarMgmtManualSup;
+    begin
+        if (Rec.CarID MOD 2 = 0) then
+            BindSubscription(CarMgmtManualSup)
+        else
+            UnbindSubscription(CarMgmtManualSup);
+
+
+    end;
 }
