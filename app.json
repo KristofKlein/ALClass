@@ -9,7 +9,7 @@
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "",
+  "logo": "./Images/download.png",
   "dependencies": [
     {
       "id": "96537b19-0629-41cf-a27e-fdc384bac260",
