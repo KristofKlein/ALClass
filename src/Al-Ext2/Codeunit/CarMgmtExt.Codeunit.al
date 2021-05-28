@@ -40,7 +40,7 @@ codeunit 50101 CarMgmtExt
             exit(SumSpeed / Counter);
         end;
     end;
-
+    #region Event Publisher
     [IntegrationEvent(false, false)]
     local procedure OnBeforeCalcNeedForSpeed(var Cars: Record Car; var Handled: Boolean)
     begin
@@ -50,6 +50,9 @@ codeunit 50101 CarMgmtExt
     local procedure OnAfterCalcNeedForSpeed(Cars: Record Car)
     begin
     end;
+    #endregion
+
+    #region EventSubscriper
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::CarMgmtExt, 'OnBeforeCalcNeedForSpeed', '', false, false)]
     local procedure _OnBeforeCalcNeedForSpeed(var Cars: Record Car; var Handled: Boolean);
@@ -83,4 +86,5 @@ codeunit 50101 CarMgmtExt
     begin
         Message('あなたは地獄のように元気に見えます');
     end;
+    #endregion
 }
